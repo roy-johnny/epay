@@ -1,0 +1,82 @@
+doctype html
+html(lang='en')
+    head
+        title Login V16
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        // ===============================================================================================
+        link(rel='icon', type='image/png', href='images/icons/favicon.ico')
+        // ===============================================================================================
+        link(rel='stylesheet', type='text/css', href='vendor/bootstrap/css/bootstrap.min.css')
+        // ===============================================================================================
+        link(rel='stylesheet', type='text/css', href='fonts/font-awesome-4.7.0/css/font-awesome.min.css')
+        // ===============================================================================================
+        link(rel='stylesheet', type='text/css', href='fonts/Linearicons-Free-v1.0.0/icon-font.min.css')
+        // ===============================================================================================
+        link(rel='stylesheet', type='text/css', href='vendor/animate/animate.css')
+        // ===============================================================================================
+        link(rel='stylesheet', type='text/css', href='vendor/css-hamburgers/hamburgers.min.css')
+        // ===============================================================================================
+        link(rel='stylesheet', type='text/css', href='vendor/animsition/css/animsition.min.css')
+        // ===============================================================================================
+        link(rel='stylesheet', type='text/css', href='vendor/select2/select2.min.css')
+        // ===============================================================================================
+        link(rel='stylesheet', type='text/css', href='vendor/daterangepicker/daterangepicker.css')
+        // ===============================================================================================
+        link(rel='stylesheet', type='text/css', href='css/util.css')
+        link(rel='stylesheet', type='text/css', href='css/main.css')
+        script(src='https://www.google.com/recaptcha/api.js')
+        // ===============================================================================================
+    body
+        .limiter
+            .container-login100(style="background-image: url('images1/2.jpg');")
+                .wrap-login100.p-t-30.p-b-50(style='width:600px')
+                    span.login100-form-title.p-b-41
+                        | Account Sign Up
+                    form().login100-form.validate-form.p-b-33.p-t-5
+                        // can delete url
+                        .wrap-input100.validate-input(data-validate='Enter username',style='padding:20px 0')
+                            input.input100(type='text', name='name', placeholder='User name', id='name', required)
+                            span.focus-input100(data-placeholder='')
+                        .wrap-input100.validate-input(data-validate='Enter password', style='padding:20px 0',required)
+                            input.input100(type='password', name='pass', placeholder='Password', id='pass')
+                            span.focus-input100(data-placeholder='')
+                        .wrap-input100.validate-input(data-validate='Enter First name',style='padding:20px 0')
+                            input.input100(type='text', name='fn', placeholder='First name', id='fn')
+                            span.focus-input100(data-placeholder='F.N.')
+                        .wrap-input100.validate-input(data-validate='Enter Last name',style='padding:20px 0')
+                            input.input100(type='text', name='ln', placeholder='Last name', id='ln')
+                            span.focus-input100(data-placeholder='L.N.')
+                        .wrap-input100.validate-input(data-validate='Enter address',style='padding:20px 0')
+                            input.input100(type='text', name='address', placeholder='address', id='address')
+                            span.focus-input100(data-placeholder='🏠')
+                        .wrap-input100.validate-input(data-validate='Enter email',style='padding:20px 0')
+                            input.input100(type='email', name='email', placeholder='email', id='email')
+                            span.focus-input100(data-placeholder='✉')
+                        .wrap-input100.validate-input(data-validate='Enter phone number',style='padding:20px 0')
+                            input.input100(type='text', name='phone', placeholder='phone number', id='phone')
+                            span.focus-input100(data-placeholder='📞')
+                        .container-login100-form-btn.m-t-32
+                            button.login100-form-btn(type='button' id='signup-submit')
+                                | Signup
+                        .container-login100-form-btn.m-t-32
+                            a.btn.login100-form-btn(href='/', role='button') Back
+
+        #dropDownSelect1
+        // ===============================================================================================
+        script(src='vendor/jquery/jquery-3.2.1.min.js')
+        script(src='js/signup.js')
+        // ===============================================================================================
+        script(src='vendor/animsition/js/animsition.min.js')
+        // ===============================================================================================
+        script(src='vendor/bootstrap/js/popper.js')
+        script(src='vendor/bootstrap/js/bootstrap.min.js')
+        // ===============================================================================================
+        script(src='vendor/select2/select2.min.js')
+        // ===============================================================================================
+        script(src='vendor/daterangepicker/moment.min.js')
+        script(src='vendor/daterangepicker/daterangepicker.js')
+        // ===============================================================================================
+        script(src='vendor/countdowntime/countdowntime.js')
+        // ===============================================================================================
+        script(src='js/main.js')
